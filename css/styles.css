@@ -3,20 +3,22 @@
 }
 
 body{
-	background-color: #ff2121;
-	background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre-big.png");
+	/* background-color: black; */
+	background-image: url("https://i.ytimg.com/vi/8KTfbWzCV-U/maxresdefault.jpg");
 }
 
 img{
 	max-width: 100%;
+	/* height: 250px; */
 	margin-top: 10px;
 	margin-bottom: 10px;
 	padding: 5px;
 	border: 5px solid black;
+	background-color: #f7e8a0;
 }
 
 .container{
-	background-color: lightgray;
+	background-color: white;
 	border: 10px solid black;
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -24,7 +26,9 @@ img{
 }
 
 h1{
+	font-family: 'Diplomata', cursive;
 	font-size: 48px;
+	color: #DAB806;
 }
 
 input{
@@ -34,4 +38,5 @@ input{
 
 .modal-details{
 	margin-bottom: 20px;
+	font-family: 'Metamorphous', cursive;
 }
