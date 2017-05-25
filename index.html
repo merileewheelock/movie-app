@@ -4,7 +4,7 @@
 	<title>jQuery Version of Movie App</title>
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Metamorphous|Diplomata" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Diplomata|Raleway" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -18,24 +18,26 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="header">
-				<h1 class="text-center">Movie Database</h1>
+			<div class="header-section">
+				<div class="header">
+					<h1 class="text-center">Movie Database</h1>
+				</div>
+
+				<div id="genre-buttons" class="<col-sm-12 text-center">
+					<!-- jQuery, put our buttons in please -->
+				</div>
+
+				<div id="search-container" class="col-sm-12 text-center">
+					<form id="movie-form">
+						<input id="search-input" type="text" placeholder="Enter your movie search here" />
+						<button type="submit" class="btn btn-warning">Search</button>
+					</form>
+				</div>
+
+				<div class="row">
+					<h3 class="movie-type text-center">Now Playing</h3>
+				</div>
 			</div>
-			<div id="search-container" class="col-sm-12 text-center">
-				<form id="movie-form">
-					<input id="search-input" type="text" placeholder="Enter your movie search here" />
-					<button type="submit" class="btn btn-primary">Search</button>
-				</form>
-			</div>
-		</div>
-
-		<div id="genre-buttons" class="<col-sm-12 text-center">
-			<!-- jQuery, put our buttons in please -->
-
-		</div>
-
-		<div class="row">
-			<h3 class="movie-type text-center">Now Playing</h3>
 		</div>
 
 		<div class="row">
@@ -58,7 +60,7 @@
 	        <div class="modal-details"></div>
 	      </div>
 	      <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
 	      </div>
 	    </div>
 	  </div>
