@@ -27,7 +27,7 @@ $(document).ready(function(){
 		});
 		$grid.imagesLoaded().progress( function() {
 			$grid.isotope('layout');
-		});
+		}); // To fix the image loading issue with isotope
 
 		$('#all-genres').click(function(){
 			$grid.isotope( {filter: ''} );
@@ -77,7 +77,7 @@ $(document).ready(function(){
 
 			var posterUrl = imageBaseUrl + 'w300' + data.results[i].poster_path;
 			// Need to add 'w300' as part of the url; this stands for width 300
-			console.log(data.results[i]);
+			// console.log(data.results[i]);
 			
 			newHTML += '<div class="col-xs-6 movie-card '+movieGenreClassList+'" movie-id=' + data.results[i].id + '>'; // This gets info of poster's ID
 				newHTML += '<div class="col-xs-12 text-center card-title"><h3>'+data.results[i].title+'</h3></div>';
@@ -98,7 +98,7 @@ $(document).ready(function(){
 			// console.log(thisMovieId);
 			var thisMovieUrl = `${apiBaseUrl}/movie/${thisMovieId}?api_key=${apiKey}`;
 			$.getJSON(thisMovieUrl,(thisMovieData)=>{
-				console.log(thisMovieData);
+				// console.log(thisMovieData);
 				$('#myModalLabel').html('<div class="text-center">'+thisMovieData.title+'</div>');
 				var newHTML = '';
 				newHTML += '<div class="modal-details">';
