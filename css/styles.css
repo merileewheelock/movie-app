@@ -28,13 +28,13 @@ img{
 
 h1{
 	font-family: 'Diplomata', cursive;
-	font-size: 48px;
+	font-size: 40px;
 	color: #DAB806;
 }
 
 input{
 	height: 35px;
-	width: 350px;
+	width: 300px;
 }
 
 #user-search{
